@@ -1,0 +1,14 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: chocolate;
+    color: yellow;
+    font-size: 15pt;
+}
+
+h1{
+    color: blueviolet;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}

@@ -1,0 +1,16 @@
+h1{
+    background-color: rgb(40, 40, 56);
+    color: cyan;
+}
+.h2-1{
+    background-color: coral;
+    color: rgb(101, 101, 11);
+}
+.h2-2{
+    background-color: #02576a;
+    color: #6f0b3e;
+}
+.h2-3{
+    background-color: hsl(41, 82%, 19%);
+    color: hsl(20, 74%, 14%);
+}
