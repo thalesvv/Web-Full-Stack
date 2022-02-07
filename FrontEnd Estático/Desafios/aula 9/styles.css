@@ -1,3 +1,9 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 html, body{
     height: 100%;
 }
@@ -10,60 +16,171 @@ body{
     display: grid;
     height: 100%;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 2fr 5fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr;
+
+
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 
 header{
     background-color: rgb(48, 91, 18);
     grid-column: 1 / span 4;
-    grid-row: 1 / span 2;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    /* box-shadow: 9px 7px 20px -10px rgba(0,0,0,0.6); */
+    grid-row: 1 / 2;
 }
 
 
-/* header nav {
+header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    box-shadow: 9px 7px 20px -10px rgba(0,0,0,0.6);
-}*/
+    /* box-shadow: 9px 7px 20px -10px rgba(0,0,0,0.6); */
+}
 
 header nav a {
     text-decoration: none;
     color: white;
+    
 }
 
-aside{
+aside {
     background-color: brown;
     grid-column: 4 / span 1;
     grid-row: 2 / span 5;
+    padding: 5% 10%;
 }
 
-main{
-    background-color: black;
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
     grid-column: 1 / span 3;
-    grid-row: 2 / span 5;
+    grid-row: 2 / span 4;
+    overflow-y: scroll;
+    padding: 20px 15px;
+    width: 100%;
+    text-align: center;
+
+}
+
+#intro {
+   display: flex; 
+    /* justify-content: space-between ;
+    text-align: justify; */
+    width: 100%;
+    padding: 10px;
+
 }
 
 .fotoPerfil {
-    background-size: cover;
-    max-width: 2000px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-size: auto;
+    
+    width: 50%;
     height: auto;
+    max-width: 2000px;
+    max-height: 1080px;
+
+    vertical-align: baseline;
+}
+
+.ferramentas {
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-size:auto;
+    
+    width: 50%;
+    height: auto;
+    max-width: 2000px;
+    max-height: 1080px;
+   
+    vertical-align: baseline;
+}
+.mini-intro {
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.portfolio-photoshop {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    align-self: center;
+    
+}
+
+.imgs {
+    flex: content;
+    justify-content: flex-start;
+    max-width: 250px;
+    padding: 10px;
+}
+
+.habilidades {
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;  
+}
+
+.experiencia {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+
+.texto-experiencia{
+    justify-content: flex-start;
+    text-align: justify;
+    width: 45%;
+    padding: 10px;
+}
+
+.contato{
+    justify-content: flex-start;
+    text-align: justify;
+    width: 45%;
+    padding: 10px;
+}
+
+.contato li {
+    display: flex;
+}   
+
+footer {
+    background-color: blueviolet;
+    grid-column: 1 / span 4;
+    grid-row: 6 / span 1;
+
+    display: flex;
+    justify-content: space-around;
+
 }
 
 
-footer{
-    background-color: blueviolet;
-    grid-column: 1 / span 4;
-    grid-row: 7 / span 2;
+
+/* Página de aquisição de clientes */
+
+
+.paginaContato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    width: 100%;
+
+    padding: 20px 15px;
+}
+
+.esquerda {
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.direita{
+    justify-content: flex-end;
+    width: 100%;
 }

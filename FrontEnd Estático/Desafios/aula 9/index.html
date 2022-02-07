@@ -11,14 +11,13 @@
 
 <body>
      <div class="grid">
-            <header>
-                <nav class="menu">
-                    <a href="#home">Home</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#contato">Contato</a>
-                </nav>
-
-            </header>
+        <header>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a target="_blank" rel="next" href="contact.html">Contato</a>
+            </nav>
+        </header>
     
             
             <aside>
@@ -32,20 +31,108 @@
             </aside>
 
             <main>
-                <picture>
-                    <source class="fotoPerfil" media="(max-width: 750px" srcset="" type="images/perfilThales-p.png"> 
-                    <source class="fotoPerfil" media="(max-width: 1850px" srcset="images/perfilThales-m.png" type="image/png"> 
-                    <img class="fotoPerfil" src="images/perfilThales.jpg" alt="fotografia do thales">
-                    <figcaption>Foto do Thales Vanzo Vieira, perfil com fundo montanhoso.</figcaption>
-                </picture>
-            
+                <section id="intro"></section>
+                    <div class="fotoPerfil">
+                        <picture>
+                            <source class="fotoPerfil" media="(max-width: 750px" srcset="" type="images/perfilThales-p.png"> 
+                            <source class="fotoPerfil" media="(max-width: 1850px" srcset="images/perfilThales-m.png" type="image/png"> 
+                            <img class="fotoPerfil" src="images/perfilThales-alt.png" alt="fotografia do thales">
+                            <!-- <figcaption >Foto do Thales Vanzo Vieira, perfil com fundo montanhoso.</figcaption> -->
+                        </picture>
+                    </div>
+
+                    <div class="ferramentas">
+                        <img class="ferramentas" src="images/ferramentas.png" alt="minhas habilidades">
+                    </div>
+
+                    <div class="mini-intro">
+                        <h3>Sobre</h3>
+                        <p>
+                            <strong>Sou Thales Vanzo Vieira, Web Full Stack Jr, Designer e Físico em formação.</strong>
+                            <br>
+                            Conheça minhas habilidades,  e <a href="#contato">Entre em contato!</a>
+                        </p>
+                    </div>
+                    <div class="habilidades">
+                        <h3>Habilidades</h3>
+                        <p>Estas são algumas das ferramentas que agreguei ao meu conhecimento durante minha carreira.</p>
+                    </div>
+
+                </section>
+
+                <section class="projetos">
+                    
+                    <h1>Conheça alguns de meus projetos e trabalhos</h1>
+                    <div class="portfolio-photoshop">
+                        <img class="imgs" src="images/portfolioDesign/img1.png" alt="Imagem de propaganda feita por Thales Vanzo Vieira">
+                        <img class="imgs" src="images/portfolioDesign/img2.png" alt="Imagem de propaganda feita por Thales Vanzo Vieira">
+                        <img class="imgs" src="images/portfolioDesign/img6.png" alt="Imagem de propaganda feita por Thales Vanzo Vieira">
+                        <img class="imgs" src="images/portfolioDesign/img4.png" alt="Imagem de propaganda feita por Thales Vanzo Vieira">
+                        <img class="imgs" src="images/portfolioDesign/img5.png" alt="Imagem de propaganda feita por Thales Vanzo Vieira">
+                        <img class="imgs" src="images/portfolioDesign/img3.png" alt="Imagem de propaganda feita por Thales Vanzo Vieira">
+                        <img class="imgs" src="images/portfolioDesign/img7.png" alt="Imagem de propaganda feita por Thales Vanzo Vieira">
+                        <img class="imgs" src="images/portfolioDesign/img8.png" alt="Imagem de propaganda feita por Thales Vanzo Vieira">
+                        <a target="_blank" rel="external" href="https://github.com/thalesvv/Web-Full-Stack/blob/master/FrontEnd%20Estático/Desafios/Aula%207/desafio1.html"><img class="imgs" src="images/portfolioDesign/img9.png" alt="Página Web feita por Thales Vanzo Vieira"></a>
+                        <a target="_blank" rel="external" href="https://github.com/thalesvv/Web-Full-Stack/blob/master/FrontEnd%20Estático/Exemplos/Ex25/index.html"><img class="imgs" src="images/portfolioDesign/img10.png" alt="Cógido de página web feita por Thales Vanzo Vieira"></a>
+
+                    </div>
+
+                </section>
+
+
+                <section id="experiencia" class="experiencia">
+                    <div class="texto-experiencia">
+                        <h1>Formação e Experiência</h1>
+                        <p> 
+                            Iniciei minha graduação em Bacharelado em Física pela Universidade Estadual de Campinas em 2012.
+                            Ao final deste ano comecei a trabalhar em um projeto de iniciação científica no qual tive a oportunidade de ter contato com as linguagens de programação C e C++.
+                            Neste momento desenvolvi modelos para análise de dados do <a target="_blank" rel="external" href="https://www.auger.org">Observatório Pierre-Auger da Argentina</a>.
+                            Então pude apresentar meus trabalhos em uma conferência internacional <a target="_blank" rel="external" href="https://arxiv.org/abs/1310.2197">(ICRC)</a> no segundo ano,
+                            quando me envolvi com  experimentos de neutrinos que se tornou meu foco de estudo principal.
+                            <br>
+                            Já em 2014, fui para os Estados Unidos para trabalhar no <a target="_blank" rel="external" href="https://www.fnal.gov">Fermilab</a> como estagiário, e comecei a liderar, na UNICAMP,
+                            o desenvolvimento do sistema de detecção de fótons, e a trabalhar ma análise de dados do experimento, sendo membro de colaboração internacional <a target="_blank" rel="external" href="https://www.dunescience.org">DUNE</a>.
+                            Esse projeto se estendeu até 2018 quando passei a estudar fenomenologia e a desenvolver um detector de múons para o <a target="_blank" rel="external" href="https://cms.cern">CMS</a> do CERN.
+                            Porém em 2019, com 98% da grade do meu curso completa, me afastei da universidade a qual pretendo retornar este ano para a conclusão do curso.
+                            <br>
+                            Então em 2020 comecei a trabalhar como <a href="#portfolio-photoshop">designer freelancer</a> de mídias para redes sociais, no qual atuo até o presente momento.
+                            Concomitantemente, me aprofundo nos estudos de <strong>Web Full Stack</strong> através do processo seletivo <a target="_blank" rel="external" href="https://www.letscode.com.br/potencia-tech-ifood">#vemSerTech</a>,
+                            na área de tecnologia e desenvolvimento Web.
+                            <br>
+                            Busco neste ano de 2022 mudar de área de trabalho, de forma a associar meus pensamentos críticos-analíticos adquiridos através da graduação com a flexibilidade
+                            e a criatividade proporcionadas pelo design. 
+                        </p>
+
+                    </div>
+                    <div class="contato">
+                        <h1>Conecte-se!</h1>
+                        <p>Visite minhas páginas
+                            <ul>
+                                <li><a target="_blank" rel="external" href="https://github.com/thalesvv">
+                                    <img src="images/icons/github.png" alt="Ícone GitHub" width="20" height="20">
+                                    GitHub
+                                </a></li>
+
+                                <li><a href="https://www.linkedin.com/in/thalesvv/">
+                                    <img src="https://icons.iconarchive.com/icons/limav/flat-gradient-social/512/Linkedin-icon.png" alt="Ícone LinkedIn" width="20" height="20">
+                                    LinkedIn
+                                </a></li>
+                            </ul>
+                        </p>
+                        <h1> <a target="_blank" rel="next" href="contact.html">Entre em contato</a></h1>
+                        
+                        
+                    </div>
+
+                </section>
+
 
             </main>
 
 
             <footer>
                 <h4>Thales Vanzo Vieira</h4>
-                <h4>Entre conosco</h4>
+                <h4>Entre em Contato!</h4>
 
             </footer>
 
