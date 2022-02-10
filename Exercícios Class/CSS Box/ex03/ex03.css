@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    
 }
 
 .container{
@@ -10,27 +11,27 @@ html, body {
     height: 250px;
     background-color: #132e4c;
     background-blend-mode: darken;
-   
-}
-.container .imagem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
     
-    background-color: rgb(255, 255, 255);
-   
-}
-.container .imagem img{
-    width: 150px;
-    height: 150px;
-}
+} 
 
-.container .imagem img:hover {
-    background-image: url(./idea-hover.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.botao {
+    
+    border-radius: 25px;
+
+    border: none;
+    color: #3d3d3d;
+    padding: 7px 15 px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: 18px;
+    font-family: sans-serif;
+    
+    margin: 4px 2px;
+    
+    
+    background-image: linear-gradient(to right, #FDFDFD , #dedede);
+    
+  }
+
