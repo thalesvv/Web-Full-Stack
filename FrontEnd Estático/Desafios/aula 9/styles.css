@@ -12,6 +12,11 @@ body{
     margin: 0%;
 }
 
+h2 {
+    font-weight: bolder;
+    color: #333317;
+}
+
 .grid{
     display: grid;
     height: 100%;
@@ -23,11 +28,20 @@ body{
     align-items: stretch;
 }
 
+/* @media (max-width: 1350px){
+   
+    main {
+        
+    }
+} */
+
 
 header{
     background-color: rgb(48, 91, 18);
     grid-column: 1 / span 4;
     grid-row: 1 / 2;
+    background-image: url(./images/backgroundHeader.png);
+    background-image: linear-gradient(to bottom, #999945, #333317);
 }
 
 
@@ -54,12 +68,12 @@ aside {
 }
 
 main {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 4;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 4;
     overflow-y: scroll;
     padding: 20px 15px;
     width: 100%;
@@ -69,8 +83,9 @@ main {
 
 #intro {
    display: flex; 
-    /* justify-content: space-between ;
-    text-align: justify; */
+   flex-wrap: wrap;
+   align-items: flex-start;
+    /* justify-content: space-between ;*/
     width: 100%;
     padding: 10px;
 
@@ -104,8 +119,15 @@ main {
 .mini-intro {
     justify-content: flex-end;
     align-items: flex-start;
-    width: 50%;
+    width: 35%;
+    padding-right: 15%;
 }
+
+.habilidades {
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 35%;  
+}  
 
 .portfolio-photoshop {
     display: flex;
@@ -118,16 +140,10 @@ main {
 .imgs {
     flex: content;
     justify-content: flex-start;
-    background-size: contain;
+    background-size: cover;
     max-width: 250px;
     padding: 10px;
-}
-
-.habilidades {
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 50%;  
-}   
+} 
 
 .experiencia {
     display: flex;
