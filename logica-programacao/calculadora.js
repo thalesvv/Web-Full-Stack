@@ -1,15 +1,16 @@
 console.log("=== CALCULADORA ===");
 
 function calcular() {
-    console.log("CLICK!!!");
+    // entrada (captura) de dados
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+    console.log(num1,typeof num1);
+    console.log(num2, typeof num2);
 
-    const num1 = document.getElementById("num1").value;
-    const num2 = document.getElementById("num2").value;
+    // processamento
+    const total = num1 + num2; // adição 
+    console.log(total, typeof total);
 
-    console.log(num1, num2);
-
-    const resultado = document.getElementById("resultado").write;
-
-
-    console.log(resultado);
+    // saída dados
+    document.getElementById("result").value = total;
 }
