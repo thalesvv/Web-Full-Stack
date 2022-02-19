@@ -14,8 +14,8 @@
         <header>
             <nav class="menu">
                 <a href="index.html">Home</a>
-                <a href="#sobre">Sobre</a>
-                <a target="_blank" rel="next" href="contact.html">Contato</a>
+                <a href="#intro">Sobre</a>
+                <a href="contact.html">Contato</a>
             </nav>
         </header>
     
@@ -23,10 +23,10 @@
             <aside>
                 <h3>Conteúdo</h3>
                 <ol>
-                    <li><a href=""></a>Conteúdo 1</li>
-                    <li><a href=""></a>Conteúdo 2</li>
-                    <li><a href=""></a>Conteúdo 3</li>
-                    <li><a href=""></a>Conteúdo 4</li>                    
+                    <li><a href="#intro"></a>Sobre</li>
+                    <li><a href="#projetos"></a>Trabalhos</li>
+                    <li><a href="contact.html"></a>Contato</li>
+                    <li><a href="#contato"></a>Conecte-se</li>                    
                 </ol>
             </aside>
 
@@ -34,8 +34,8 @@
                 <section id="intro"></section>
                     <div class="fotoPerfil">
                         <picture>
-                            <source class="fotoPerfil" media="(max-width: 300px" srcset="" type="images/fotosThales/perfilThales-300.png"> 
-                            <source class="fotoPerfil" media="(max-width: 750px" srcset="" type="images/fotosThales/perfilThales-750"> 
+                            <source class="fotoPerfil" media="(max-width: 300px" srcset="images/fotosThales/perfilThales-300.png" type="image/png"> 
+                            <source class="fotoPerfil" media="(max-width: 800px" srcset="images/fotosThales/perfilThales-800.png" type="image/png"> 
                             <source class="fotoPerfil" media="(max-width: 1350px" srcset="images/fotosThales/perfilThales-1350.png" type="image/png"> 
                             <img class="fotoPerfil" src="images/fotosThales/perfilThales-alt.png" alt="fotografia do thales">
                             <!-- <figcaption >Foto do Thales Vanzo Vieira, perfil com fundo montanhoso.</figcaption> -->
@@ -61,7 +61,7 @@
 
                 </section>
 
-                <section class="projetos">
+                <section id="projetos" class="projetos">
                     
                     <h1>Conheça alguns de meus projetos e trabalhos</h1>
                     <div class="portfolio-photoshop">
@@ -97,7 +97,7 @@
                             Esse projeto se estendeu até 2018 quando passei a estudar fenomenologia e a desenvolver um detector de múons para o <a target="_blank" rel="external" href="https://cms.cern">CMS</a> do CERN.
                             Porém em 2019, com 98% da grade do meu curso completa, me afastei da universidade a qual pretendo retornar este ano para a conclusão do curso.
                             <br>
-                            Então em 2020 comecei a trabalhar como <a href="#portfolio-photoshop">designer freelancer</a> de mídias para redes sociais, no qual atuo até o presente momento.
+                            Então em 2020 comecei a trabalhar como <a target="_self" rel="same" href="#portfolio-photoshop">designer freelancer</a> de mídias para redes sociais, no qual atuo até o presente momento.
                             Concomitantemente, me aprofundo nos estudos de <strong>Web Full Stack</strong> através do processo seletivo <a target="_blank" rel="external" href="https://www.letscode.com.br/potencia-tech-ifood">#vemSerTech</a>,
                             na área de tecnologia e desenvolvimento Web.
                             <br>
@@ -134,7 +134,7 @@
 
             <footer>
                 <h4>Thales Vanzo Vieira</h4>
-                <h4>Entre em Contato!</h4>
+                <h4> <a target="_blank" rel="next" href="contact.html">Entre em contato</a></h4>
 
             </footer>
 
