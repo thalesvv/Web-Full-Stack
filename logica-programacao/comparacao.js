@@ -16,31 +16,59 @@ function comparacao(){
     const operador = document.getElementById("operador");
     let comparacao = null;
    
-    // PROCESSAMENTO
+    // PROCESSAMENTO  do meu jeito
+    // switch (operador.value) {
+    //     case ">":
+    //         comparacao = parseFloat(num1.value) > parseFloat(num2.value);
+    //         break;
+    //     case "<":
+    //         comparacao = parseFloat(num1.value) < parseFloat(num2.value);
+    //         break;
+    //     case "!=":
+    //         comparacao = parseFloat(num1.value) != parseFloat(num2.value);
+    //         break;
+    //     case "=":
+    //         comparacao = parseFloat(num1.value) == parseFloat(num2.value);
+    //         break;
+    //     case ">=":
+    //         comparacao = parseFloat(num1.value) >= parseFloat(num2.value);
+    //         break;
+    //     case "<=":
+    //         comparacao = parseFloat(num1.value) <= parseFloat(num2.value);
+    //         break;
+    
+    //     default:
+    //         comparacao = "errou";
+    //         break;
+    // }
+
+
+    // da forma que o professor fez em aula
     switch (operador.value) {
-        case ">":
-            comparacao = parseFloat(num1.value) > parseFloat(num2.value);
+        case "MaiorQue":
+            comparacao = num1.value > num2.value;
             break;
-        case "<":
-            comparacao = parseFloat(num1.value) < parseFloat(num2.value);
+        case "MenorQue":
+            //comparacao = eval(num1.value, n2.value);
             break;
-        case "!=":
-            comparacao = parseFloat(num1.value) != parseFloat(num2.value);
+        case "MaiorOuIgual":
+            comparacao = num1.value >= num2.value;
             break;
-        case "==":
-            comparacao = parseFloat(num1.value) == parseFloat(num2.value);
+        case "MenorOuIgual":
+            comparacao = num1.value <= num2.value;
             break;
-        case ">=":
-            comparacao = parseFloat(num1.value) >= parseFloat(num2.value);
+        case "DiferenteDe":
+            comparacao = num1.value != num2.value;
             break;
-        case "<=":
-            comparacao = parseFloat(num1.value) <= parseFloat(num2.value);
+        case "IgualA":
+            comparacao = num1.value == num2.value;
             break;
     
         default:
             comparacao = "errou";
             break;
     }
+
 
     // SAÍDA
     document.getElementById("result").value = comparacao;
