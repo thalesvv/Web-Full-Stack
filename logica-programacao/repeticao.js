@@ -95,11 +95,54 @@ document.write("<hr>");
 //     document.write("*");
 // }
 
-// DESAFIO: imprimir 10 asteriscos por linha, em 5 linhas
+// DESAFIO - 1: imprimir 10 asteriscos por linha, em 5 linhas
 
 for (let index = 0; index < 5; index++) {
     for (let ind = 0; ind < 10; ind++) {
         document.write("*");
     }
     document.write("<br>");
+}
+
+document.write("<hr>");
+
+// Desafio 2 - imprime 1 esterisco na primeira linha, imprime 2 na segunda ...
+
+for (let index = 1; index <= 10; index++) {
+    for (let ind = 0; ind < index; ind++) {
+        document.write("*");
+    }
+    document.write("<br>");
+}
+
+document.write("<hr>");
+
+// Desafio 3 - desenhar um V com asteriscos nas pontas e iguais no meio,
+// a primeira linha tem 20 colunas preenchidas e a última tem 1 asterisco centralizado
+// &nbsp; para fazer espaços em branco
+
+// *=================*
+//  *===============* 
+//   *=============*  
+//    *===========*   
+//     *=========*    
+//      *=======*
+//       *=====*
+//        *===*
+//         *=*
+//          *
+
+for (let linha = 10; linha > 0; linha--) {
+    for (let espaco = 10; espaco >= linha; espaco--) {
+        document.write("&nbsp;");
+    }
+    if (linha==1) {
+        document.write("&nbsp;*");
+        break;
+    }
+    document.write("*");
+    for (let meio = 0; meio < ((linha-1)*2); meio++) {
+        document.write("&nbsp;");
+    }
+    document.write("*", "<br>");
 }
