@@ -27,7 +27,7 @@ function custos() {
     let totalValorGastoMes = 0.0;
 
     // dados de aquisição;
-    let numEntregas = parseFloat(document.getElementById("numEntregas").value);
+    let numEntregas = parseFloat(document.getElementById("numEntregas").value); // por semana
     let distEntregas = parseFloat(document.getElementById("distEntregas").value);
 
 
@@ -35,15 +35,43 @@ function custos() {
     const totalKmDia = (numEntregas * (distEntregas *2)) + distIdaVolta;
     const totalKmMes = totalKmDia * diasTrabalhados;
     const custoGasIni = volumeTanqueGas * precoGas;
-    const quantoOCarroAnda = volumeTanqueGas * kmLitroDoCarro;
+    const quantoOCarroAnda = volumeTanqueGas * kmLitroDoCarro; // Km
+
+    // if (totalKmDia > quantoOCarroAnda) {
+    //     const abasteceu = (totalKmDia - quantoOCarroAnda)/kmLitroDoCarro; // Litros
+    //     const texto = (`Teve que abastecer ${abasteceu} litros de gasolina a mais por dia.`);
+    //     document.getElementById("abasteceuDia").innerHTML = texto;
+    // }
+    // else if (totalKmDia <= quantoOCarroAnda ) {
+    //     const restouCombustivel = volumeTanqueGas - (totalKmDia/kmLitroDoCarro); // Litros
+    //     const texto = (`Sobraram ${restouCombustivel} litros de gasolina por dia.`);
+    //     document.getElementById("abasteceuDia").innerHTML = texto;
+    // }
+
+    totalValorGastoMes = ((totalKmMes/quantoOCarroAnda) * precoGas) + custoGasIni;
+
+    const ganhoPorEntrega = parseFloat(document.getElementById("ganhoPorEntrega").value);
+    const lucroOuPreju = (ganhoPorEntrega * numEntregas * diasTrabalhados) - totalValorGastoMes;
+    
+    if (lucroOuPreju >= 0) {
+        const respostaFinal = `Lucro de ${lucroOuPreju} reais no mês `;
+        document.getElementById("resultado").innerHTML = respostaFinal;
+    }
+    else {
+        const respostaFinal = `Prejuízo de ${lucroOuPreju} reais no mês `;
+        document.getElementById("resultado").innerHTML = respostaFinal;
+    }
+    
 
     console.log("totalKmDia", totalKmDia);
     console.log("totalKmMes", totalKmMes);
     console.log("custoGasInicial", custoGasIni);
     console.log("quantoOCarroAnda", quantoOCarroAnda);
+    console.log("totalValorGastoMes", totalValorGastoMes);
 
 }
 
 // para terminar em casa
 // queremos quanto vai ser gasto no mes
 // utilize a função Randon - https://www.w3schools.com/js/tryit.asp?filename=tryjs_random_0_9
+

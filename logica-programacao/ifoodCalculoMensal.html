@@ -9,13 +9,17 @@
 <body>
     <h1>Cálculo de Custo Mensal iFood</h1>
     <label for="numEntregas">Número de Entregas:</label>
-    <input type="number" id="numEntregas">
+    <input type="number" id="numEntregas" placeholder="por semana">
     <br>
     <label for="distEntregas">Distância das Entregas:</label>
     <input type="number" id="distEntregas">
+    <br>
+    <label for="ganhoPorEntrega">Quanto recebe por entrega?</label>
+    <input type="number" id="ganhoPorEntrega" placeholder="R$">
     <hr>
     <button onclick="custos()">Calcular Custo</button>
-
+    <p id="abasteceuDia"></p>
+    <p id="resultado"></p>
     
     <script src="ifoodCalculoMensal.js"></script>
 </body>
