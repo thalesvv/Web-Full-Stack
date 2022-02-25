@@ -25,8 +25,8 @@ function addCarro() {
     }
     else {
         carros.push(campoCarro);
-    document.getElementById("modelo").value = "";
-    document.getElementById("quantidade").innerHTML = carros.length;
+        document.getElementById("modelo").value = "";
+        document.getElementById("quantidade").innerHTML = carros.length;
     }
 
     // Saída
@@ -41,7 +41,7 @@ function addCarro() {
     else if (carros.length > 10) {
             const tamanho = carros.length;
             const itemLista = document.createElement("li");
-            const nome = document.createTextNode(carros[tamanho-1 ]);
+            const nome = document.createTextNode(carros[tamanho-1]);
             itemLista.appendChild(nome);
             listaCarros.appendChild(itemLista);
     }
