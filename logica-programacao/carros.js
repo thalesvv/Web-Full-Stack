@@ -17,11 +17,20 @@ PREMISSA: USE ARRAY!!
 const carros = [];
 
 function addCarro() {
-    carros.push(document.getElementById("modelo").value);
-    document.getElementById("modelo").value = " ";
-    document.getElementById("quantidade").innerHTML = carros.length;
+    const campoCarro = document.getElementById("modelo").value
     
-    if (carros.length == 3) {
+    // Aquisição
+    if (campoCarro=="" || campoCarro == " ") {
+        alert("Digite um nome");
+    }
+    else {
+        carros.push(campoCarro);
+    document.getElementById("modelo").value = "";
+    document.getElementById("quantidade").innerHTML = carros.length;
+    }
+
+    // Saída
+    if (carros.length == 10) {
         carros.forEach(function(modelo) {
             const itemLista = document.createElement("li");
             const nome = document.createTextNode(modelo);
@@ -29,7 +38,7 @@ function addCarro() {
             listaCarros.appendChild(itemLista);
         } );
     }
-    else if (carros.length > 3) {
+    else if (carros.length > 10) {
             const tamanho = carros.length;
             const itemLista = document.createElement("li");
             const nome = document.createTextNode(carros[tamanho-1 ]);
