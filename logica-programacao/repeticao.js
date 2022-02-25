@@ -132,8 +132,10 @@ document.write("<hr>");
 //         *=*
 //          *
 
-for (let linha = 10; linha > 0; linha--) {
-    for (let espaco = 10; espaco >= linha; espaco--) {
+let entrada = prompt("Quer quantas linhas?");
+
+for (let linha = entrada; linha > 0; linha--) {
+    for (let espaco = entrada; espaco >= linha; espaco--) {
         document.write("&nbsp;");
     }
     if (linha==1) {
