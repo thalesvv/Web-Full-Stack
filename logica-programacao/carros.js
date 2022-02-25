@@ -1,10 +1,10 @@
 console.log("=== CARROS ===");
 
 // DICA 1 : Apenas no Input
-document.getElementById("modelo").value = "Preencher";
+// document.getElementById("modelo").value = "Preencher";
 
 // DICA 2: Tags em geral
-document.getElementById("quantidade").textContent = "Preencheer";
+document.getElementById("quantidade").textContent = "0";
 
 // Critérios de Aceite
 /*
@@ -17,10 +17,23 @@ PREMISSA: USE ARRAY!!
 const carros = [];
 
 function addCarro() {
-    carros.push = document.getElementById("modelo").value;
+    carros.push(document.getElementById("modelo").value);
     document.getElementById("modelo").value = " ";
-    console.log(carros, carros.length);
+    document.getElementById("quantidade").innerHTML = carros.length;
     
-    document.getElementById("quantidade").textContent = carros.length;
-
+    if (carros.length == 3) {
+        carros.forEach(function(modelo) {
+            const itemLista = document.createElement("li");
+            const nome = document.createTextNode(modelo);
+            itemLista.appendChild(nome);
+            listaCarros.appendChild(itemLista);
+        } );
+    }
+    else if (carros.length > 3) {
+            const tamanho = carros.length;
+            const itemLista = document.createElement("li");
+            const nome = document.createTextNode(carros[tamanho-1 ]);
+            itemLista.appendChild(nome);
+            listaCarros.appendChild(itemLista);
+    }
 };
