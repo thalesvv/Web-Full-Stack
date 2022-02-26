@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+</head>
+<body>
+    <h1>Loja de Carros</h1>
+
+    <label for="">Modelo:</label>
+    <input type="text" id="modelo">
+   
+    <br><br>
+    <label for="">Ano:</label>
+    <input type="number" id="ano">
+    <br><br>
+
+    <label for="">Cor:</label>
+    <input type="color" id="cor">
+    <br><br>
+
+    <label for="">Situação:</label>
+    <select id="situacao">
+    <option value="Novo">Novo</option>
+    <option value="usado">Usado</option>
+    <option value="zero">Zero KM</option>
+    </select>   
+
+    <br><br>
+   
+    <button onclick="addCarro()">Adicionar</button>
+
+    <hr>
+
+    <script src="carros2.js"></script>
+</body>
+</html>
