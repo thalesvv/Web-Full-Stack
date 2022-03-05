@@ -50,8 +50,67 @@ function addCarro() {
   };
 
   console.log(carro);
-  carros.push(carro);
+  carros.push(carro); // adiciona no array
 
   // saida
   console.table(carros);
+  const lista = document.getElementById("lista");
+ 
+ /* modo nao eficiente de se resolver
+  let array = [];
+ 
+  // lista.innerHTML = ``;
+
+  carros.forEach(function (carro) {
+    // lista.innerHTML += `
+    array.push(
+      `<tr>
+        <td>${carro.modelo}</td>
+        <td>${carro.ano}</td>
+        <td>${carro.cor}</td>
+        <td>${carro.situacao}</td>
+      </tr>`
+    );
+  })
+  console.log(array);
+  lista.innerHTML = array.join("");
+}*/
+
+  // exibir a tabela
+  lista.innerHTML = carros
+  // .filter(function (carro) {
+  //   return carro.ano == "2015"
+  // })
+  .map(function (carro) {
+    return  `<tr>
+        <td>${carro.modelo}</td>
+        <td>${carro.ano}</td>
+        <td>${carro.cor}</td>
+        <td>${carro.situacao}</td>
+      </tr>`;
+  })
+  .join("");
+
+  // limpar os campos
+  modelo.value = "";
+  ano.value = "";
+  cor.value = "";
+  // situacao.value = "";
+
+  // dar foco no primeiro campo
+  modelo.focus();
+
+  function ordenar() {
+    console.log("click");
+    // lista.innerHTML = carros.sort();
+  }
 }
+
+// AVALIACAO - Entrega dia 21
+/*
+1 - Fazer uma copia do exercicio da loja de carros
+2 - adicionar uma coluna com um id (ao lado do modelo)
+3 - Adicionar no formulario um campo para receber o preço
+4 - Exibir uma coluna com o preco
+5 - exibir o total de todos os veiculos cadastrados (requisito -> usar REDUCE)
+*/

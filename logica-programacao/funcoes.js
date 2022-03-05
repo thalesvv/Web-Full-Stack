@@ -20,3 +20,34 @@ console.log( sum ); // ref função
 console.log( sum() ); // 0
 console.log( sum(5) ); // 5
 console.log( sum(5, 10) ); // 15
+
+console.log("=== Arrow Function ===");
+// Arrow function
+// function () {}  // sintaxe normal
+// () => {} // nova sintaxe
+
+function (value){return value;}
+value => value;
+// Ex 1
+
+// [1,2,3].forEach((value) => {
+//     console.log(value);
+// });
+
+
+// function (value) {return value;}  // sintaxe normal
+// value => value; // nova sintaxe
+
+
+// Ex 2
+let numbers = [1,2,3];
+
+numbers = numbers.filter(value => value < 3);
+
+// // Ex 3
+// function () {return value} // sintaxe normal
+// () => value  // sintaxe nova
+
+numbers = numbers.reduce((prev, curr) => prev + curr, 0);
+
+console.log(numbers);

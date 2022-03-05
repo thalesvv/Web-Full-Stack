@@ -63,6 +63,7 @@ console.log(
 );
 
 // filter / map / reduce
+// filter
 console.log(
     numeros.filter(function(numero) {
         console.log("filter?", numero);
@@ -71,11 +72,30 @@ console.log(
 );
 console.log(numeros);
 
+// map
 console.log(
     numeros.map(function(numero) {
         console.log("map?", numero);
         return numero * 5;
     })
-);
+); 
 
 console.log(numeros);
+
+// reduce
+console.log(
+    // numeros.reduce(callback, valorInicial)
+
+    numeros.reduce(function (previous, current, index, array) {
+        console.log("prev:", previous,"cur:", current);
+        // console.log("index", index, "array", array);
+        return previous + current;
+        // previous.push(current * 2);
+        // return previous;
+    }, 0)
+)
+
+
+
+
+
