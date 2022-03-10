@@ -32,7 +32,7 @@ C++, Java, PHP, a palavra reservada this ela é a instancia de um objeto
 // Uso do this no contexto global
 
 // console.log(this.window);
-// se eu atribuiruma prorpiedade pro objetto this
+// se eu atribuir uma prorpiedade pro objetto this
 // no contexto global, ele adiciona a propriedade como sendo uma do objeto global
 
 // this.color = "red";
